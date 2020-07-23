@@ -1,22 +1,42 @@
 @import "~bootstrap/scss/bootstrap";
 
 .App {
+  width: 100vw;
   text-align: center;
+  background-color: #111216;
+  min-height: 100vh;
 }
 
 .App-body {
-  width: 100vw;
-  background-color: #0a0b0d;
   min-height: 100vh;
+  max-width: 500px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background-color: #0a0b0d;
   color: white;
+  padding-top: 3em;
+}
+
+.card {
+  background-color: #2c2d2f;
+  .card-body {
+    h2 {
+      font-size: 1.5rem;
+      padding-bottom: 0.6em;
+    }
+    img {
+      max-width: 90%;
+      border-radius: 10px;
+    }
+    p {
+      padding-top: 1.2em;
+    }
+  }
+}
+
+.content {
 }
 
 img {
   max-width: 90%;
-  border: solid white 4px;
   border-radius: 10px;
 }

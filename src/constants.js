@@ -12,6 +12,7 @@ export const RESULT_VIEW = "result_view";
 export const foods = [
   new FoodModel(
     ROBBING_WATERMELON_URL,
-    "Yeah, definitely your food looks like it could rob a bank."
+    "Is your food a criminal?",
+    "Yeah, that's some bad*ss food."
   ),
 ];

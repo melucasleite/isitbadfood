@@ -15,7 +15,7 @@ const DecideView = ({ userFoodUrl, setView }) => {
       <Col xs={12} className="mt-5 mb-3">
         <Card>
           <Card.Body>
-            <h2>Does your food look like this?</h2>
+            <h2>{food.question}</h2>
             <Image src={food.url} />
             <Col xs={12} className="mt-5 mb-2">
               <Button className="btn btn-lg btn-danger mr-3">No</Button>

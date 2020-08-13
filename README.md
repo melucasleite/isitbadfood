@@ -1,4 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Diet culture has taught us that there's good vs bad food.
+So remains the question, is it bad food?
+
+This is a WIP of a joke, I will add more context when I've some time to actually finish this.
 
 ## Available Scripts
 

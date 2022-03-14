@@ -1,6 +1,10 @@
 # Python
 *.pyc
 
+# Project files
+*.DS_Store
+db.sqlite3
+
 # Logs
 logs
 *.log

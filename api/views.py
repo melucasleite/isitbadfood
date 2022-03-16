@@ -1,5 +1,3 @@
-from django.shortcuts import render
-from msrest import Serializer
 from rest_framework import viewsets
 from api.models import Food
 from api.serializers import FoodSerializer

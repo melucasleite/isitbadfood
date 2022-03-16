@@ -1,22 +1,22 @@
 import React from "react";
-import { foods, RESULT_VIEW } from "../constants";
+import { RESULT_VIEW } from "../constants";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
-const DecideView = ({ userFoodUrl, setView }) => {
+const DecideView = ({ userFoodUrl, setView, foods }) => {
   const food = foods[0];
+  if (!food) {
+    return <p>loading...</p>
+  }
   return (
     <div>
-      <Col xs={12}>
-        <Image maxHeight="30px" src={userFoodUrl} />
-      </Col>
       <Col xs={12} className="mt-5 mb-3">
         <Card>
           <Card.Body>
-            <h2>{food.question}</h2>
-            <Image src={food.url} />
+            <h2>{food.name}</h2>
+            <Image src={food.image} />
             <Col xs={12} className="mt-5 mb-2">
               <Button className="btn btn-lg btn-danger mr-3">No</Button>
               <Button
